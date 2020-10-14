@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OneMusicAPI\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OneMusicAPI\Client\ObjectSerializer;
 
 /**
  * Medium Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -60,7 +60,7 @@ class Medium implements ModelInterface, ArrayAccess
         'total_discs' => 'string',
         'position' => 'string',
         'format' => 'string',
-        'tracks' => '\OpenAPI\Client\Model\Track[]'
+        'tracks' => '\OneMusicAPI\Client\Model\Track[]'
     ];
 
     /**
@@ -297,7 +297,7 @@ class Medium implements ModelInterface, ArrayAccess
     /**
      * Gets tracks
      *
-     * @return \OpenAPI\Client\Model\Track[]|null
+     * @return \OneMusicAPI\Client\Model\Track[]|null
      */
     public function getTracks()
     {
@@ -307,7 +307,7 @@ class Medium implements ModelInterface, ArrayAccess
     /**
      * Sets tracks
      *
-     * @param \OpenAPI\Client\Model\Track[]|null $tracks tracks
+     * @param \OneMusicAPI\Client\Model\Track[]|null $tracks tracks
      *
      * @return $this
      */

@@ -22,11 +22,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+      "url": "https://github.com/onemusicapi/client-php.git"
     }
   ],
   "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
+    "onemusicapi/client-php": "*@dev"
   }
 }
 ```
@@ -60,7 +60,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new OneMusicAPI\Client\Api\ReleaseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -83,7 +83,7 @@ try {
     $result = $apiInstance->release($user_key, $inc, $must_inc, $max_result_count, $min_certainty, $min_image_score, $min_image_width, $min_image_height, $max_image_width, $max_image_height, $title, $artist, $barcode);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->release: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ReleaseApi->release: ', $e->getMessage(), PHP_EOL;
 }
 
 ?>
@@ -95,7 +95,7 @@ All URIs are relative to *http://api.onemusicapi.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**release**](docs/Api/DefaultApi.md#release) | **GET** /20190716/release | 
+*ReleaseApi* | [**release**](docs/Api/ReleaseApi.md#release) | **GET** /20190716/release | 
 
 
 ## Documentation For Models

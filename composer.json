@@ -2,38 +2,41 @@
     "name": "onemusicapi/client-php",
     "description": "OneMusicAPI is a low cost music metadata API",
     "keywords": [
-        "openapitools",
-        "openapi-generator",
-        "openapi",
+        "music",
+        "audio",
+        "metadata",
+        "cover art",
+        "album art",
+        "images",
         "php",
         "sdk",
         "rest",
         "api"
     ],
-    "homepage": "https://openapi-generator.tech",
-    "license": "unlicense",
+    "homepage": "http://www.onemusicapi.com",
+    "license": "MIT",
     "authors": [
         {
-            "name": "OpenAPI-Generator contributors",
-            "homepage": "https://openapi-generator.tech"
+            "name": "Dan Gravell",
+            "homepage": "http://www.onemusicapi.com"
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=7.2",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
         "guzzlehttp/guzzle": "^6.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.4",
-        "squizlabs/php_codesniffer": "~2.6",
-        "friendsofphp/php-cs-fixer": "~2.12"
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^2.12"
     },
     "autoload": {
-        "psr-4": { "OpenAPI\\Client\\" : "lib/" }
+        "psr-4": { "OneMusicAPI\\Client\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "OpenAPI\\Client\\" : "test/" }
+        "psr-4": { "OneMusicAPI\\Client\\" : "test/" }
     }
 }
+

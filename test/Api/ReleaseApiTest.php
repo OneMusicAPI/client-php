@@ -1,10 +1,10 @@
 <?php
 /**
- * DefaultApiTest
+ * ReleaseApiTest
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,22 +26,22 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace OpenAPI\Client;
+namespace OneMusicAPI\Client;
 
-use \OpenAPI\Client\Configuration;
-use \OpenAPI\Client\ApiException;
-use \OpenAPI\Client\ObjectSerializer;
+use \OneMusicAPI\Client\Configuration;
+use \OneMusicAPI\Client\ApiException;
+use \OneMusicAPI\Client\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
- * DefaultApiTest Class Doc Comment
+ * ReleaseApiTest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
-class DefaultApiTest extends TestCase
+class ReleaseApiTest extends TestCase
 {
 
     /**

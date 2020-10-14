@@ -1,10 +1,10 @@
 <?php
 /**
- * DefaultApi
+ * ReleaseApi
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace OneMusicAPI\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,20 +34,20 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use OneMusicAPI\Client\ApiException;
+use OneMusicAPI\Client\Configuration;
+use OneMusicAPI\Client\HeaderSelector;
+use OneMusicAPI\Client\ObjectSerializer;
 
 /**
- * DefaultApi Class Doc Comment
+ * ReleaseApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
-class DefaultApi
+class ReleaseApi
 {
     /**
      * @var ClientInterface
@@ -132,9 +132,9 @@ class DefaultApi
      * @param  string $artist The name of the artist for the release. (optional)
      * @param  string $barcode The barcode for the release. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OneMusicAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Release[]
+     * @return \OneMusicAPI\Client\Model\Release[]
      */
     public function release($user_key, $inc = null, $must_inc = null, $max_result_count = null, $min_certainty = null, $min_image_score = null, $min_image_width = null, $min_image_height = null, $max_image_width = null, $max_image_height = null, $title = null, $artist = null, $barcode = null)
     {
@@ -159,9 +159,9 @@ class DefaultApi
      * @param  string $artist The name of the artist for the release. (optional)
      * @param  string $barcode The barcode for the release. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OneMusicAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Release[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OneMusicAPI\Client\Model\Release[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releaseWithHttpInfo($user_key, $inc = null, $must_inc = null, $max_result_count = null, $min_certainty = null, $min_image_score = null, $min_image_width = null, $min_image_height = null, $max_image_width = null, $max_image_height = null, $title = null, $artist = null, $barcode = null)
     {
@@ -198,20 +198,20 @@ class DefaultApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Release[]' === '\SplFileObject') {
+                    if ('\OneMusicAPI\Client\Model\Release[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Release[]', []),
+                        ObjectSerializer::deserialize($content, '\OneMusicAPI\Client\Model\Release[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Release[]';
+            $returnType = '\OneMusicAPI\Client\Model\Release[]';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -230,7 +230,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Release[]',
+                        '\OneMusicAPI\Client\Model\Release[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -296,7 +296,7 @@ class DefaultApi
      */
     public function releaseAsyncWithHttpInfo($user_key, $inc = null, $must_inc = null, $max_result_count = null, $min_certainty = null, $min_image_score = null, $min_image_width = null, $min_image_height = null, $max_image_width = null, $max_image_height = null, $title = null, $artist = null, $barcode = null)
     {
-        $returnType = '\OpenAPI\Client\Model\Release[]';
+        $returnType = '\OneMusicAPI\Client\Model\Release[]';
         $request = $this->releaseRequest($user_key, $inc, $must_inc, $max_result_count, $min_certainty, $min_image_score, $min_image_width, $min_image_height, $max_image_width, $max_image_height, $title, $artist, $barcode);
 
         return $this->client

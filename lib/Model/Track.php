@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OneMusicAPI\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OneMusicAPI\Client\ObjectSerializer;
 
 /**
  * Track Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -61,8 +61,8 @@ class Track implements ModelInterface, ArrayAccess
         'title' => 'string',
         'number' => 'string',
         'artists' => 'string[]',
-        'match' => '\OpenAPI\Client\Model\TrackMatch',
-        'releases' => '\OpenAPI\Client\Model\TrackRelease[]',
+        'match' => '\OneMusicAPI\Client\Model\TrackMatch',
+        'releases' => '\OneMusicAPI\Client\Model\TrackRelease[]',
         'uris' => 'string[]',
         'composers' => 'string[]',
         'isrc' => 'string[]',
@@ -363,7 +363,7 @@ class Track implements ModelInterface, ArrayAccess
     /**
      * Gets match
      *
-     * @return \OpenAPI\Client\Model\TrackMatch|null
+     * @return \OneMusicAPI\Client\Model\TrackMatch|null
      */
     public function getMatch()
     {
@@ -373,7 +373,7 @@ class Track implements ModelInterface, ArrayAccess
     /**
      * Sets match
      *
-     * @param \OpenAPI\Client\Model\TrackMatch|null $match match
+     * @param \OneMusicAPI\Client\Model\TrackMatch|null $match match
      *
      * @return $this
      */
@@ -387,7 +387,7 @@ class Track implements ModelInterface, ArrayAccess
     /**
      * Gets releases
      *
-     * @return \OpenAPI\Client\Model\TrackRelease[]|null
+     * @return \OneMusicAPI\Client\Model\TrackRelease[]|null
      */
     public function getReleases()
     {
@@ -397,7 +397,7 @@ class Track implements ModelInterface, ArrayAccess
     /**
      * Sets releases
      *
-     * @param \OpenAPI\Client\Model\TrackRelease[]|null $releases releases
+     * @param \OneMusicAPI\Client\Model\TrackRelease[]|null $releases releases
      *
      * @return $this
      */

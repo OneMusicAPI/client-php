@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OneMusicAPI\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OneMusicAPI\Client\ObjectSerializer;
 
 /**
  * TrackRelease Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,7 +59,7 @@ class TrackRelease implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'position' => 'string',
         'medium_position' => 'string',
-        'release' => '\OpenAPI\Client\Model\Release'
+        'release' => '\OneMusicAPI\Client\Model\Release'
     ];
 
     /**
@@ -270,7 +270,7 @@ class TrackRelease implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \OpenAPI\Client\Model\Release
+     * @return \OneMusicAPI\Client\Model\Release
      */
     public function getRelease()
     {
@@ -280,7 +280,7 @@ class TrackRelease implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \OpenAPI\Client\Model\Release $release release
+     * @param \OneMusicAPI\Client\Model\Release $release release
      *
      * @return $this
      */

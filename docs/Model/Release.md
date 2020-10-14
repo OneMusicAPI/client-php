@@ -12,11 +12,11 @@ Name | Type | Description | Notes
 **country** | **string** |  | [optional] 
 **genre** | **string[]** |  | [optional] 
 **compilation** | **bool** |  | [optional] 
-**media** | [**\OpenAPI\Client\Model\Medium[]**](Medium.md) |  | [optional] 
-**images** | [**\OpenAPI\Client\Model\Image[]**](Image.md) |  | [optional] 
+**media** | [**\OneMusicAPI\Client\Model\Medium[]**](Medium.md) |  | [optional] 
+**images** | [**\OneMusicAPI\Client\Model\Image[]**](Image.md) |  | [optional] 
 **uris** | **string[]** |  | [optional] 
 **types** | **string[]** |  | [optional] 
-**label** | [**\OpenAPI\Client\Model\ReleaseLabel**](ReleaseLabel.md) |  | [optional] 
+**label** | [**\OneMusicAPI\Client\Model\ReleaseLabel**](ReleaseLabel.md) |  | [optional] 
 **barcode** | **string** |  | [optional] 
 **score** | **double** |  | 
 

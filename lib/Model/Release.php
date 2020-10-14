@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OneMusicAPI\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OneMusicAPI\Client\ObjectSerializer;
 
 /**
  * Release Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OneMusicAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -65,11 +65,11 @@ class Release implements ModelInterface, ArrayAccess
         'country' => 'string',
         'genre' => 'string[]',
         'compilation' => 'bool',
-        'media' => '\OpenAPI\Client\Model\Medium[]',
-        'images' => '\OpenAPI\Client\Model\Image[]',
+        'media' => '\OneMusicAPI\Client\Model\Medium[]',
+        'images' => '\OneMusicAPI\Client\Model\Image[]',
         'uris' => 'string[]',
         'types' => 'string[]',
-        'label' => '\OpenAPI\Client\Model\ReleaseLabel',
+        'label' => '\OneMusicAPI\Client\Model\ReleaseLabel',
         'barcode' => 'string',
         'score' => 'double'
     ];
@@ -489,7 +489,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets media
      *
-     * @return \OpenAPI\Client\Model\Medium[]|null
+     * @return \OneMusicAPI\Client\Model\Medium[]|null
      */
     public function getMedia()
     {
@@ -499,7 +499,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets media
      *
-     * @param \OpenAPI\Client\Model\Medium[]|null $media media
+     * @param \OneMusicAPI\Client\Model\Medium[]|null $media media
      *
      * @return $this
      */
@@ -513,7 +513,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets images
      *
-     * @return \OpenAPI\Client\Model\Image[]|null
+     * @return \OneMusicAPI\Client\Model\Image[]|null
      */
     public function getImages()
     {
@@ -523,7 +523,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets images
      *
-     * @param \OpenAPI\Client\Model\Image[]|null $images images
+     * @param \OneMusicAPI\Client\Model\Image[]|null $images images
      *
      * @return $this
      */
@@ -585,7 +585,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets label
      *
-     * @return \OpenAPI\Client\Model\ReleaseLabel|null
+     * @return \OneMusicAPI\Client\Model\ReleaseLabel|null
      */
     public function getLabel()
     {
@@ -595,7 +595,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets label
      *
-     * @param \OpenAPI\Client\Model\ReleaseLabel|null $label label
+     * @param \OneMusicAPI\Client\Model\ReleaseLabel|null $label label
      *
      * @return $this
      */

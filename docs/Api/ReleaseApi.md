@@ -1,16 +1,16 @@
-# OpenAPI\Client\DefaultApi
+# OneMusicAPI\Client\ReleaseApi
 
 All URIs are relative to *http://api.onemusicapi.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**release**](DefaultApi.md#release) | **GET** /20190716/release | 
+[**release**](ReleaseApi.md#release) | **GET** /20190716/release | 
 
 
 
 ## release
 
-> \OpenAPI\Client\Model\Release[] release($user_key, $inc, $must_inc, $max_result_count, $min_certainty, $min_image_score, $min_image_width, $min_image_height, $max_image_width, $max_image_height, $title, $artist, $barcode)
+> \OneMusicAPI\Client\Model\Release[] release($user_key, $inc, $must_inc, $max_result_count, $min_certainty, $min_image_score, $min_image_width, $min_image_height, $max_image_width, $max_image_height, $title, $artist, $barcode)
 
 
 
@@ -23,7 +23,7 @@ Searches for releases. Queries to /release must be either a name query, an Acous
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new OneMusicAPI\Client\Api\ReleaseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -46,7 +46,7 @@ try {
     $result = $apiInstance->release($user_key, $inc, $must_inc, $max_result_count, $min_certainty, $min_image_score, $min_image_width, $min_image_height, $max_image_width, $max_image_height, $title, $artist, $barcode);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->release: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ReleaseApi->release: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Release[]**](../Model/Release.md)
+[**\OneMusicAPI\Client\Model\Release[]**](../Model/Release.md)
 
 ### Authorization
 
